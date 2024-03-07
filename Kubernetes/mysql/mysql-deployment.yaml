@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: mysql-replicaset
+  name: mysql-deployment
 spec:
   replicas: 3
   selector:
@@ -20,3 +20,4 @@ spec:
           value: pw
         ports:
         - containerPort: 3306
+                         
