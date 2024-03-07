@@ -3,7 +3,7 @@ name: CI/CD Pipeline for Containerized Application
 
 on: 
   push:
-    branches: [ dev ]
+    branches: [ main ]
 
 jobs:
 
