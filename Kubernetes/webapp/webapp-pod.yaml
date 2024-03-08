@@ -3,7 +3,6 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    app: webapp
   name: webapp-pod
 spec:
   containers:

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-service
+  name: webapp-service-v2
   namespace : webapp
   labels:
     app: employees
@@ -10,6 +10,7 @@ spec:
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort: 30000
+      nodePort: 30001
   selector:
     app: employees
+    version : v2

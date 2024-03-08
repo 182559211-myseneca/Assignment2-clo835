@@ -1,7 +1,10 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: webapp-replicaset-v1
+  name: webapp-replicaset
+  labels:
+    app: employees
+    version: v1
 spec:
   replicas: 3
   selector:

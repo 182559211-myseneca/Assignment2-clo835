@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: mysql-replicaset
+  labels:
+    app: mysql
 spec:
   replicas: 3
   selector:
