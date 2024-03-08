@@ -3,7 +3,6 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    app: mysql
   name: mysql-pod
 spec:
   containers:
