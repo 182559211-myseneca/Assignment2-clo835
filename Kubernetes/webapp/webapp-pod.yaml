@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+  name: webapp-pod
+spec:
+  containers:
+  - image: 610510370017.dkr.ecr.us-east-1.amazonaws.com/webapp:v1.0
+    name: webapp-container
+    ports:
+      - containerPort: 8080
+
+    env:
+      - name: DBPWD
+        value: pw
+      - name: DBUSER
+        value: root
+      - name: DBHOST
+        value: "mysql-service.sqldb.svc.cluster.local"
+      - name: DBPORT
+        value: "3306"
